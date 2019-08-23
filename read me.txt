@@ -1,0 +1,44 @@
+1. How to run your code (what command-line switches they are, what happens when you
+invoke the code, etc.)
+
+    -There are different versions of Chromedriver, depending on operation system.
+(This will be explained in detail at question 3 )
+    -Firstly, install some module via: pip install -r requirements.txt
+    -Run the code remotely: python YIN_JINGYING_hw7.py -source=remote
+    -Run the code locally : python YIN_JINGYING_hw7.py -source=local
+
+    what happens:
+    if run remotely:
+        -At first, it will scrap data from website
+        -Then it will show the description of data, and some sample of data
+        -Then we will draw some conclusion
+            -it will show some description of data
+            -At last, two figure will pop out, the first one should be closed to show the second.
+            -These figures will save locally at the same fold,
+            named - wordcloud.jpg and - conclusion.jpg
+
+    if run locally:
+        -At first, it will read data from local database
+        -Then it will show the description of data, and some sample of data
+        -Then we will draw some conclusion
+            -it will show some description of data
+            -At last, two figure will pop out, the first one should be closed to show the second.
+            -These figures will save locally at the same fold,
+            named - wordcloud.jpg and - conclusion.jpg
+
+
+2. Any major “gotchas” to the code (i.e. things that don’t work, go slowly, could be
+improved, etc.)
+
+    The time when scrap data of publishers and songs might be long, please wait for few minutes.
+    This can be improved by using crawler tools that support distributed cloud capture.
+
+3. Anything else you feel is relevant to your project.
+
+    -There is a chromedriver in this fold, but it only works for MAC
+    -If this code is not run by MAC, Please install chromedriver of your operation system
+    from website  http://chromedriver.chromium.org/downloads
+    -PLEASE MUST put the  chromedriver under this fold !!
+    -please install chrome, to keep the code runs well
+    -Install some module via: pip install -r requirements.txt
+
